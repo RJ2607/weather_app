@@ -24,10 +24,10 @@ class MyApp extends StatelessWidget {
 							create: (context) => WeatherBlocBloc()..add(
 								Fetchweather(snap.data as Position)
 							),
-							child: const MyHome(),
+							child: MyHome(),
 						);
 					} else {
-						return const Scaffold(
+						return Scaffold(
 							body: Center(
 								child: CircularProgressIndicator(),
 							),
